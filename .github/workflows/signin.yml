@@ -2,8 +2,8 @@ name: Aliyun Signin
 
 on:
   schedule:
-   # 每天国际时间 17:20 运行一次, 中国时间 01:20
-    - cron: '20 17 * * *'
+   # 每天国际时间 14:40 运行一次, 中国时间 22:40
+    - cron: '40 14 * * *'
   workflow_dispatch:
 jobs:
   signin:
@@ -14,3 +14,22 @@ jobs:
         with:
           REFRESH_TOKENS: ${{ 1e7a824a79f549039a0a2554ba82288a }}
           GP_TOKEN: ${{ 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}}
+          PUSH_TYPES: ''
+          DO_NOT_REWARD: 'false'
+          SERVERCHAN_SEND_KEY: ${{ secrets.SERVERCHAN_SEND_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          PUSHPLUS_TOPIC: ${{ secrets.PUSHPLUS_TOPIC }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_TLS: ${{ secrets.SMTP_TLS }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_SENDER: ${{ secrets.SMTP_SENDER }}
+          SMTP_RECEIVER: ${{ secrets.SMTP_RECEIVER }}
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          CQHTTP_ENDPOINT: ${{ secrets.CQHTTP_ENDPOINT }}
+          CQHTTP_USER_ID: ${{ secrets.CQHTTP_USER_ID }}
+          CQHTTP_ACCESS_TOKEN: ${{ secrets.CQHTTP_ACCESS_TOKEN }}
