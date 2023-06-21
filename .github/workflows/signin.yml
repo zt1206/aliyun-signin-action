@@ -12,5 +12,5 @@ jobs:
     steps:
       - uses: ImYrS/aliyun-auto-signin@main
         with:
-          REFRESH_TOKENS: ${{ secrets.1e7a824a79f549039a0a2554ba82288a }}
-          GP_TOKEN: ${{ secrets.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}}
+          REFRESH_TOKENS: ${{ 1e7a824a79f549039a0a2554ba82288a }}
+          GP_TOKEN: ${{ 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}}
